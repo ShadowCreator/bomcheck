@@ -20,25 +20,12 @@ TODO
 Building
 --------
 
-There are two ways: OPAM or manual
-
 1. Opam
 
 _Requirements_
 
 * Ocaml
 * Opam
-* 
-
-_Instructions_
-
-* 
-
-2. Manual
-
-_Requirements_
-
-* Ocaml
 * 
 
 _Instructions_
