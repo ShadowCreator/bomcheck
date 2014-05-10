@@ -1,7 +1,8 @@
 Bomcheck
 ========
 
-Bomcheck is a command line weather checker for Australians
+Bomcheck is a command line weather checker for Australians, it's not close to being done as I am in my final year of school
+but hopefully I have time to work on this.
 
 Install
 -------
@@ -19,18 +20,6 @@ TODO
 
 Building
 --------
-
-1. Opam
-
-_Requirements_
-
-* Ocaml
-* Opam
-* 
-
-_Instructions_
-
-* 
 
 External info
 -------------
