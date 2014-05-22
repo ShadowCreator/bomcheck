@@ -1,7 +1,7 @@
 module Main where
 
 import System.Environment
-import Bomcheck( bomcheck )
+import Bomcheck.Bomcheck( bomcheck )
 
 -- Todo loop this if requested
 main :: IO ()
