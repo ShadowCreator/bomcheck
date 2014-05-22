@@ -1,4 +1,4 @@
-module Bomcheck.Location where
+module Bomcheck.Location(Location(Adelaide, Sydney)) where
 
 -- There might be a way to load this info from a data file at build time? TH?
 data Location = Adelaide | Sydney
