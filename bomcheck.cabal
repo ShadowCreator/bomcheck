@@ -19,9 +19,9 @@ library
   hs-source-dirs:      src
   -- Should more be exposed?
   exposed-modules:     Bomcheck
-  build-depends:       curl ==1.3.*,
-                       HaXml ==1.*,
-                       base ==4.6.*
+  build-depends:       base ==4.6.*,
+                       curl ==1.3.*,
+                       HaXml ==1.*
 
 executable bomcheck
   hs-source-dirs:      src
