@@ -12,3 +12,4 @@ main = do
 -- Tell bomcheck lib the location we want as well as what we want
 
 -- Go though args here, let the lib just return the data
+-- Pretty print and not pretty print
