@@ -1,10 +1,8 @@
 module GetData(getData) where
 
 import Location(Location(..))
+import Network.Curl(curlGetString, URLString, CurlCode(..))
 
-import Network.Curl
-
--- Move into Code section
 data StateLocation = SouthAustralia
 
 locationCode :: Location -> String
@@ -13,22 +11,22 @@ locationCode Adelaide = stateLocationCode SouthAustralia
 stateLocationCode :: StateLocation -> String
 stateLocationCode SouthAustralia = "IDS60920"
 
--- Move into URL section
 baseUrl :: String
 baseUrl = "ftp2.bom.gov.au/anon/gen/fwo/"
 
-locationUrl :: Location -> String
+locationUrl :: Location -> URLString
 locationUrl l = locationCode l ++ ".xml"
 
-url :: Location -> String
+url :: Location -> URLString
 url l = baseUrl ++ locationUrl l
 
--- Keep here
---get :: String -> IO String
--- Test the seccond arg
+download :: URLString -> IO (CurlCode, String)
 download s = curlGetString s []
 
-
--- Do error checking
---get :: Location -> IO String
-getData l = download $ url l
+--TODO, better error checking
+getData :: Location -> IO String
+getData l = do
+   dat <- download $ url l
+   case dat of
+     (CurlOK,x) -> return x
+     _ -> return "Error"
