@@ -5,6 +5,7 @@ import Network.Curl(curlGetString, URLString, CurlCode(..))
 
 data StateLocation = SouthAustralia
 
+-- Refactor these *Code functions into possibly a Location section with better naming
 locationCode :: Location -> String
 locationCode Adelaide = stateLocationCode SouthAustralia
 
