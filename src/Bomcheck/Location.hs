@@ -1,4 +1,4 @@
-module Location(Location(..)) where
+module Location(Location(..), location) where
 
 
 -- Have a base location ie South Australia and then narrow it down?
