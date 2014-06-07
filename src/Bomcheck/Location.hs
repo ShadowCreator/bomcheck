@@ -1,4 +1,4 @@
-module Location(Location(..), location) where
+module Location(Location(..), bom_id) where
 
 
 -- Have a base location ie South Australia and then narrow it down?
@@ -8,5 +8,6 @@ module Location(Location(..), location) where
 
 data Location = Adelaide
 
-location :: Location -> String
-location Adelaide = "Adelaide"
+--bom-id should have a better name
+bom_id :: Location -> String
+bom_id Adelaide = "023090"
