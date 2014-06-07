@@ -5,7 +5,7 @@ import Network.Curl(curlGetString, URLString, CurlCode(..))
 
 data StateLocation = SouthAustralia
 
--- Refactor these *Code functions into possibly a Location section with better naming
+-- Refactor these *Code functions into one thing that takes just a location, ie a location is part of a state, should this me in the location file?
 locationCode :: Location -> String
 locationCode Adelaide = stateLocationCode SouthAustralia
 
