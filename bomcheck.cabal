@@ -21,7 +21,7 @@ library
   exposed-modules:     Bomcheck
   build-depends:       base ==4.6.*,
                        curl ==1.3.*,
-                       HaXml ==1.*
+                       tagsoup ==0.13.*
 
 executable bomcheck
   hs-source-dirs:      src
