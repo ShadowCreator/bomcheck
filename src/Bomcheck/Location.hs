@@ -1,4 +1,4 @@
-module Location(Location(..), bom_id) where
+module Bomcheck.Location(Location(..), bom_id) where
 
 
 -- Have a base location ie South Australia and then narrow it down?
@@ -8,6 +8,6 @@ module Location(Location(..), bom_id) where
 
 data Location = Adelaide
 
---bom-id should have a better name
+--bom_id should have a better name
 bom_id :: Location -> String
 bom_id Adelaide = "023090"
