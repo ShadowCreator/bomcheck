@@ -3,6 +3,9 @@ Bomcheck
 
 Bomcheck is a command line weather checker for Australians
 
+
+Year 12 (Final year) is hard as all hell so it looks like I won't be working anymore on this until I finish my research project (Which is good, I'll have more time to actually learn Haskell!), so for all the 0 people looking forward to this, wait until after July for development to restart. By then this'll be my main project and I'll try to get it in a working state as soon as possible, but until then have fun with the terrible code.
+
 Install
 -------
 
