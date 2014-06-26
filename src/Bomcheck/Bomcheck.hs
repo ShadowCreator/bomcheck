@@ -6,4 +6,9 @@ module Bomcheck.Bomcheck(bomcheck) where
 
 -- Call verifyXML only if needed
 
-bomcheck = "Blank"
+import Process
+import GetData
+
+-- Use either to also return ErrorCode
+bomcheck :: Location -> DataToDisplay -> IO String
+bomcheck l d  = process (getData l) d l
