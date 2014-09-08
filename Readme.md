@@ -21,3 +21,8 @@ External info
 
 * http://www.bom.gov.au/catalogue/data-feeds.shtml
 * i3status
+
+License
+-------
+
+GPL3
